@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 17, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left>h1 {
+    color: rgb(0, 163, 111);
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(0, 0, 68);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0);
+}
+
+.login>h1 {
+    color: rgb(0, 147, 118);
+    font-weight: 800;
+    margin: 0;
+}
+
+.img {
+    width: 35vw;
+}
+
+.textfield {
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(1, 22, 88);
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
+    box-shadow: 0px 8px 20px rgb(0, 0, 0);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: rgb(100, 134, 163);
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.textfield>input::placeholder {
+    color: rgb(36, 34, 132);
+}
+
+.btn {
+    width: 70%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: rgb(0, 153, 140);
+    cursor: pointer;
+}

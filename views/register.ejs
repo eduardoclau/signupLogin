@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Login System - Eduardo Claudino de Carvalho</title>
+</head>
+
+<body>
+
+
+    <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body">
+                <h1 class="text-center mb-3">
+                    <i class="fas fa-user-plus"></i> Registro
+                </h1>
+                <form action="/users/register" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="name" id="name" name="name" class="form-control" placeholder="Coloque seu Nome"
+                            value="<%= typeof name != 'undefined' ? name : '' %>" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Coloque seu Email"
+                            value="<%= typeof email != 'undefined' ? email : '' %>" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" class="form-control"
+                            placeholder="Crie a Senha" value="<%= typeof password != 'undefined' ? password : '' %>" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Confirme a Senha</label>
+                        <input type="password" id="password2" name="password2" class="form-control"
+                            placeholder="Confirme a Senha"
+                            value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+                    </div> <br>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Registro
+                    </button>
+                </form> <Br>
+                Já tem cadastro?
+                <a href="./login">Clique aqui</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
